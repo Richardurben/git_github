@@ -2,6 +2,7 @@
 
 ### 新建git工作区
 **mkdir 文件夹名字;**
+
 **cd 文件夹名字**
 
 ## 新建文件
@@ -12,6 +13,7 @@
 
 ## 用户配置
 **git config --global user.name “用户名”**
+
 **git config --global user.email “用户邮箱”**
 
 ## 状态检测
@@ -38,19 +40,34 @@
 ## PS
 **如果出现不能和远程仓库建立连接的报错，如下：**
 > Please make sure you have the correct access rightsand the repository exists 或Permission denied (publickey).
+
 **ssh-keygen -t rsa -C “your@email.com”**
+
 **回车直至：**
+
 The key’s randomart image is:
+
 +—[RSA 2048]—-+
+
 | ==++. . |
+
 | . ++.o . .|
+
 | ..o++Oo |
+
 +—-[SHA256]—–+
+
 **在/home/richardurben/.ssh路径下产生：**
+
 id_rsa（私钥）
+
 id_rsa.pub（公钥）
+
 **gedit id_rsa.pub**
+
 **复制到：[个人主ssh和gpg keys文件夹下](https://github.com/settings/keys)**
-**验证**
-**ssh -T git@github.com 可看见：**
+
+**验证：ssh -T git@github.com 
+
+**可看见：**
 > You’ve successfully authenticated, but GitHub does not provide shell access.
