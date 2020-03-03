@@ -5,39 +5,39 @@
 
 **cd 文件夹名字**
 
-## 新建文件
+### 新建文件
 **使用记事本，typora等编辑源码文件，可用vi/vim/gedit等文本编辑器（输入：wq保存退出**
 
-## 工作区初始化
+## #工作区初始化
 **git init (生成.git文件夹)**
 
-## 用户配置
+### 用户配置
 **git config --global user.name “用户名”**
 
 **git config --global user.email “用户邮箱”**
 
-## 状态检测
+### 状态检测
 **git status（会显示当前工作区内未被添加未被保存到文件）**
 
-## 添加文件 
+### 添加文件 
 **git add . （全部添加）**
 
-## 备份文件添加评论（快照，暂存）
+### 备份文件添加评论（快照，暂存）
 **git commit –m “评论内容”**
 
-## 获取远程repository的地址，以.git结尾
+### 获取远程repository的地址，以.git结尾
 **在个人github主页新建repository，并复制连接，ssh和https都可以，以.git结尾**
 
-## 与远程repository建立连接
+### 与远程repository建立连接
 **git remote add origin 地址**
 
-## 拉取远程repository的README.md文件
+### 拉取远程repository的README.md文件
 **git pull –rebase origin master**
 
-## 上传本地文件到远程repository
+### 上传本地文件到远程repository
 **git push origin master**
 
-## PS
+### PS
 **如果出现不能和远程仓库建立连接的报错，如下：**
 > Please make sure you have the correct access rightsand the repository exists 或Permission denied (publickey).
 
