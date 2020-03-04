@@ -23,7 +23,8 @@
 
 **git diff 文件名（对比修改内容）**
 
-**git log -g/git reflog（查看版本历史记录）+ git reset --hard HEAD@{from git reflog}（前进未来某个版本）/git reset --hard HEAD^（回退上一个版本,同理加^）
+**git log -g/git reflog（查看版本历史记录）**
+**git reset --hard HEAD@{from git reflog}（前进未来某个版本）/git reset --hard HEAD^（回退上一个版本,同理加^）**
 
 ### 添加文件 
 **git add 文件名（添加文件至缓存区）**
@@ -48,10 +49,11 @@
 **git pull –rebase origin master**
 
 ### 上传本地文件到远程repository
-**git push origin master**
+**git push origin master --tags**
 
 ### 从远程仓库克隆
-**git git@github.com:your-name/repo-name.git**
+**git clone git@github.com:your-name/repo-name.git**
+
 
 ### PS
 **如果出现不能和远程仓库建立连接的报错，如下：**
