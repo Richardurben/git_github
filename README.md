@@ -16,14 +16,27 @@
 
 **git config --global user.email “用户邮箱”**
 
+**git config -l（查看当前生效的配置）**
+
 ### 状态检测
 **git status（会显示当前工作区内未被添加未被保存到文件）**
 
+**git diff 文件名（对比修改内容）**
+
+**git log -g/git reflog（查看版本历史记录）+ git reset --hard HEAD@{from git reflog}（前进未来某个版本）/git reset --hard HEAD^（回退上一个版本,同理加^）
+
 ### 添加文件 
+**git add 文件名（添加文件至缓存区）**
+
 **git add . （全部添加）**
 
 ### 备份文件添加评论（快照，暂存）
 **git commit –m “评论内容”**
+
+### 撤销缓存区版本修改
+**git reset HEAD 文件名**
+
+**git checkout --文件名（让这个文件回到最近一次 git commit 或 git add 时的状态，用版本库里的版本替换工作区里的版本）**
 
 ### 获取远程repository的地址，以.git结尾
 **在个人github主页新建repository，并复制连接，ssh和https都可以，以.git结尾**
@@ -36,6 +49,9 @@
 
 ### 上传本地文件到远程repository
 **git push origin master**
+
+### 从远程仓库克隆
+**git git@github.com:your-name/repo-name.git**
 
 ### PS
 **如果出现不能和远程仓库建立连接的报错，如下：**
