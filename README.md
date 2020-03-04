@@ -140,3 +140,23 @@ id_rsa.pub（公钥）
 
 **可看见：**
 > You’ve successfully authenticated, but GitHub does not provide shell access.
+
+### example（同步更新Github Fork的项目）
+1. fork项目并clone到本地
+2. 进入项目根目录
+3. 添加remote指向上游仓库
+~~~ git
+git remote add upstream https://github.com/用户/项目名称.git
+~~~
+4. 把上游项目fetch下来
+~~~ git
+git fetch upstream
+~~~
+5. merge到master
+~~~ git
+git checkout master
+git merge upstream/master
+~~~
+6. push到自己的远程仓库
+
+
