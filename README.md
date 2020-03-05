@@ -1,1 +1,1 @@
-## some tricks about git
+# Some tricks about git
