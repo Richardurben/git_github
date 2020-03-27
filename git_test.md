@@ -159,4 +159,5 @@ git merge upstream/master
 ~~~
 6. push到自己的远程仓库
 
-
+## github上的fork同步操作
+pull new requests -> compare changes -> switching the base -> create pull requests(title) -> back to your pull requests -> merge pull request -> confirm merge.
