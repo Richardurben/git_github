@@ -98,7 +98,7 @@
 **git pull –rebase origin master**
 
 ### 上传本地文件到远程repository
-**git push origin master **
+**git push origin master**
 
 **git push origin --tags（共享标签）**
 
